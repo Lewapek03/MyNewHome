@@ -91,6 +91,7 @@ Aplikacja wykorzystuje token JWT do uwierzytelniania użytkowników. Token jest 
 
 - **URL**: `/api/signin`
 - **Metoda**: POST
+
 - **Body**:
   ```json
   {
