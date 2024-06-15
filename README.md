@@ -1,5 +1,6 @@
 # Dokumentacja
 Autorzy: Paweł Bartkowicz (128218), Alan Borzozowski (128283)
+
 Projekt na przedmiot "Języki programowania JavaScript - I - M.Zażlak - 2023/2024"
 ## Opis
 
