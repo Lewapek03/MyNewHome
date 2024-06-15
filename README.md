@@ -2,7 +2,7 @@
 
 ## Opis
 
-To repozytorium zawiera kompletny kod backendu i frontendu dla portalu z ogłoszeniami nieruchomości. Portal umożliwia użytkownikom rejestrację i logowanie, dodawanie nowych ogłoszeń, edytowanie lub usuwanie własnych ogłoszeń oraz przeglądanie ogłoszeń innych użytkowników. Użytkownicy mogą filtrować ogłoszenia według tytułu lub lokalizacji. Dodatkowo, portal zawiera kalkulator wartości nieruchomości oraz kalkulator kredytów hipotecznych, które są wbudowane w wyświetlanie ogłoszeń.
+To repozytorium zawiera kompletny kod backendu i frontendu dla portalu z ogłoszeniami nieruchomości. Portal umożliwia użytkownikom rejestrację i logowanie, dodawanie nowych ogłoszeń, edytowanie lub usuwanie własnych ogłoszeń oraz przeglądanie ogłoszeń innych użytkowników. Użytkownicy mogą filtrować ogłoszenia według tytułu lub lokalizacji. Dodatkowo, portal zawiera kalkulator kredytów hipotecznych, który jest osobną stroną, ale również jest wbudwowany w ogłoszenia.
 
 ## Funkcje
 
