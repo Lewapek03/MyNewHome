@@ -1,131 +1,57 @@
-Opis
-Portal umo≈ºliwia u≈ºytkownikom rejestracjƒô i logowanie, dodawanie nowych og≈Çosze≈Ñ, edytowanie lub usuwanie w≈Çasnych og≈Çosze≈Ñ oraz przeglƒÖdanie og≈Çosze≈Ñ innych u≈ºytkownik√≥w. U≈ºytkownicy mogƒÖ filtrowaƒá og≈Çoszenia wed≈Çug tytu≈Çu lub lokalizacji. Dodatkowo, portal zawiera kalkulator warto≈õci nieruchomo≈õci oraz kalkulator kredyt√≥w hipotecznych, kt√≥re sƒÖ wbudowane w wy≈õwietlanie og≈Çosze≈Ñ.
-
+Portal umoøliwia uøytkownikom rejestracjÍ i logowanie, dodawanie nowych og≥oszeÒ, edytowanie lub usuwanie w≥asnych og≥oszeÒ oraz przeglπdanie og≥oszeÒ innych uøytkownikÛw. Uøytkownicy mogπ filtrowaÊ og≥oszenia wed≥ug tytu≥u lub lokalizacji. Dodatkowo, portal zawiera kalkulator wartoúci nieruchomoúci oraz kalkulator kredytÛw hipotecznych, ktÛre sπ wbudowane w wyúwietlanie og≥oszeÒ.
 Funkcje
-Autoryzacja u≈ºytkownik√≥w: Rejestracja i logowanie u≈ºytkownik√≥w.
-Dodawanie og≈Çosze≈Ñ: Publikowanie nowych og≈Çosze≈Ñ nieruchomo≈õci.
-Edycja i usuwanie og≈Çosze≈Ñ: Edytowanie i usuwanie w≈Çasnych og≈Çosze≈Ñ.
-PrzeglƒÖdanie og≈Çosze≈Ñ: PrzeglƒÖdanie og≈Çosze≈Ñ innych u≈ºytkownik√≥w.
-Filtrowanie og≈Çosze≈Ñ: Filtrowanie og≈Çosze≈Ñ wed≈Çug tytu≈Çu lub lokalizacji.
-Kalkulator nieruchomo≈õci: Wbudowany kalkulator warto≈õci nieruchomo≈õci.
-Kalkulator kredytowy: Wbudowany kalkulator kredyt√≥w hipotecznych.
+Autoryzacja uøytkownikÛw: Rejestracja i logowanie uøytkownikÛw.
+Dodawanie og≥oszeÒ: Publikowanie nowych og≥oszeÒ nieruchomoúci.
+Edycja i usuwanie og≥oszeÒ: Edytowanie i usuwanie w≥asnych og≥oszeÒ.
+Przeglπdanie og≥oszeÒ: Przeglπdanie og≥oszeÒ innych uøytkownikÛw.
+Filtrowanie og≥oszeÒ: Filtrowanie og≥oszeÒ wed≥ug tytu≥u lub lokalizacji.
+Kalkulator kredytowy: Wbudowany kalkulator kredytÛw hipotecznych.
 Technologie
 Frontend
-Frontend aplikacji zosta≈Ç zbudowany przy u≈ºyciu nastƒôpujƒÖcych technologii:
-
-React: Biblioteka do budowy interfejsu u≈ºytkownika.
+Frontend aplikacji zosta≥ zbudowany przy uøyciu nastÍpujπcych technologii:
+React: Biblioteka do budowy interfejsu uøytkownika.
 Bootstrap: Framework CSS do responsywnego i mobilnego pierwszego projektu.
-Axios: Biblioteka do wykonywania zapyta≈Ñ HTTP.
-React-Router-Dom: Narzƒôdzie do nawigacji po aplikacji React.
+Axios: Biblioteka do wykonywania zapytaÒ HTTP.
+React-Router-Dom: NarzÍdzie do nawigacji po aplikacji React.
 Backend
-Backend aplikacji zosta≈Ç zbudowany przy u≈ºyciu nastƒôpujƒÖcych technologii:
-
-Node.js: ≈örodowisko uruchomieniowe JavaScript.
+Backend aplikacji zosta≥ zbudowany przy uøyciu nastÍpujπcych technologii:
+Node.js: årodowisko uruchomieniowe JavaScript.
 Express: Framework do budowy aplikacji webowych w Node.js.
 MySQL: Relacyjna baza danych.
-API: Interfejs programowania aplikacji, umo≈ºliwiajƒÖcy komunikacjƒô miƒôdzy frontendem a backendem.
-Token JWT: JSON Web Token, u≈ºywany do bezpiecznej wymiany informacji.
-Zale≈ºno≈õci backendu
-Backend wykorzystuje nastƒôpujƒÖce zale≈ºno≈õci:
-
-json
-Skopiuj kod
-"dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cookie-session": "^2.1.0",
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^9.0.2",
-    "mysql2": "^2.0.2",
-    "multer": "^1.4.5-lts.1",
-    "sequelize": "^5.21.2"
-}
+API: Interfejs programowania aplikacji, umoøliwiajπcy komunikacjÍ miÍdzy frontendem a backendem.
+Token JWT: JSON Web Token, uøywany do bezpiecznej wymiany informacji.
 Instrukcja uruchomienia
-Aby uruchomiƒá stronƒô, wykonaj poni≈ºsze kroki:
-
-Sklonuj repozytorium:
-
-bash
-Skopiuj kod
+Aby uruchomiÊ stronÍ, wykonaj poniøsze kroki:
+1. Sklonuj repozytorium:
 git clone <URL-repozytorium>
-Przejd≈∫ do g≈Ç√≥wnego folderu projektu:
-
-bash
-Skopiuj kod
+2. Przejdü do g≥Ûwnego folderu projektu:
 cd <folder-projektu>
-Uruchom Docker Compose:
-
-bash
-Skopiuj kod
+3. Uruchom Docker Compose:
 docker-compose up --build
-Przejd≈∫ do folderu frontendu:
-
-bash
-Skopiuj kod
+4. Przejdü do folderu frontendu:
 cd frontend
-Zainstaluj zale≈ºno≈õci frontendu:
-
-bash
-Skopiuj kod
+5. Zainstaluj zaleønoúci frontendu:
 npm install
-Uruchom frontend:
-
-bash
-Skopiuj kod
+6. Uruchom frontend:
 npm start
-Struktura katalog√≥w
-frontend/: Zawiera kod frontendu aplikacji.
-backend/: Zawiera kod backendu aplikacji.
-Frontend
-src/: G≈Ç√≥wne ≈∫r√≥d≈Ço kodu frontendu.
-components/: Komponenty React u≈ºywane w aplikacji.
-pages/: Strony aplikacji.
-services/: Pliki do komunikacji z backendem.
-App.js: G≈Ç√≥wny plik aplikacji.
-index.js: Punkt wej≈õciowy aplikacji.
-Backend
-controllers/: Kontrolery obs≈ÇugujƒÖce logikƒô aplikacji.
-models/: Modele danych u≈ºywane przez Sequelize.
-routes/: Definicje tras API.
-middleware/: Middleware do uwierzytelniania i innych operacji.
-config/: Pliki konfiguracyjne, w tym konfiguracja bazy danych.
 Uwierzytelnianie
-Aplikacja wykorzystuje token JWT do uwierzytelniania u≈ºytkownik√≥w. Token jest generowany podczas logowania i do≈ÇƒÖczany do ka≈ºdego ≈ºƒÖdania wymagajƒÖcego autoryzacji.
-
-Przyk≈Çady zapyta≈Ñ API
-Rejestracja u≈ºytkownika
-URL: /api/register
+Aplikacja wykorzystuje token JWT do uwierzytelniania uøytkownikÛw. Token jest generowany podczas logowania i do≥πczany do kaødego øπdania wymagajπcego autoryzacji.
+Przyk≥ady zapytaÒ API
+Rejestracja uøytkownika
+URL:†/api/signup
 Metoda: POST
 Body:
-json
-Skopiuj kod
 {
   "username": "exampleUser",
   "email": "user@example.com",
   "password": "examplePassword"
 }
-Logowanie u≈ºytkownika
-URL: /api/login
+Logowanie uøytkownika
+URL:†/api/signin
 Metoda: POST
 Body:
-json
-Skopiuj kod
 {
   "email": "user@example.com",
   "password": "examplePassword"
 }
-Dodanie nowego og≈Çoszenia
-URL: /api/listings
-Metoda: POST
-Headers: Authorization: Bearer <token>
-Body:
-json
-Skopiuj kod
-{
-  "title": "Example Listing",
-  "description": "This is an example listing.",
-  "location": "Example Location",
-  "price": 100000
-}
-Wspar
+
