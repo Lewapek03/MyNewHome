@@ -67,7 +67,7 @@ function AdsList() {
             <Row>
                 {filteredAds.map(ad => (
                     <Col md={4} key={ad.id}>
-                        <Card>
+                        <Card className='mb-4'>
                             <Card.Img variant="top" src={ad.images[0] || ''} style={{ height: '200px', objectFit: 'cover' }} />
                             <Card.Body>
                                 <Card.Title>{ad.title}</Card.Title>

@@ -11,7 +11,7 @@ const HomePage = () => {
 
       <div className="bg-dark text-white mt-5 py-3 text-center">
         <Container>
-          MyNewHome © 2024 | Your trusted real estate partner
+          MyNewHome © 2024 | Authors: Paweł Bartkowicz (128218), Alan Borzozowski (128283)
         </Container>
       </div>
     </>
