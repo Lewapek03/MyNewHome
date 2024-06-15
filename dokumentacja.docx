@@ -1,0 +1,131 @@
+Opis
+Portal umożliwia użytkownikom rejestrację i logowanie, dodawanie nowych ogłoszeń, edytowanie lub usuwanie własnych ogłoszeń oraz przeglądanie ogłoszeń innych użytkowników. Użytkownicy mogą filtrować ogłoszenia według tytułu lub lokalizacji. Dodatkowo, portal zawiera kalkulator wartości nieruchomości oraz kalkulator kredytów hipotecznych, które są wbudowane w wyświetlanie ogłoszeń.
+
+Funkcje
+Autoryzacja użytkowników: Rejestracja i logowanie użytkowników.
+Dodawanie ogłoszeń: Publikowanie nowych ogłoszeń nieruchomości.
+Edycja i usuwanie ogłoszeń: Edytowanie i usuwanie własnych ogłoszeń.
+Przeglądanie ogłoszeń: Przeglądanie ogłoszeń innych użytkowników.
+Filtrowanie ogłoszeń: Filtrowanie ogłoszeń według tytułu lub lokalizacji.
+Kalkulator nieruchomości: Wbudowany kalkulator wartości nieruchomości.
+Kalkulator kredytowy: Wbudowany kalkulator kredytów hipotecznych.
+Technologie
+Frontend
+Frontend aplikacji został zbudowany przy użyciu następujących technologii:
+
+React: Biblioteka do budowy interfejsu użytkownika.
+Bootstrap: Framework CSS do responsywnego i mobilnego pierwszego projektu.
+Axios: Biblioteka do wykonywania zapytań HTTP.
+React-Router-Dom: Narzędzie do nawigacji po aplikacji React.
+Backend
+Backend aplikacji został zbudowany przy użyciu następujących technologii:
+
+Node.js: Środowisko uruchomieniowe JavaScript.
+Express: Framework do budowy aplikacji webowych w Node.js.
+MySQL: Relacyjna baza danych.
+API: Interfejs programowania aplikacji, umożliwiający komunikację między frontendem a backendem.
+Token JWT: JSON Web Token, używany do bezpiecznej wymiany informacji.
+Zależności backendu
+Backend wykorzystuje następujące zależności:
+
+json
+Skopiuj kod
+"dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^2.0.2",
+    "multer": "^1.4.5-lts.1",
+    "sequelize": "^5.21.2"
+}
+Instrukcja uruchomienia
+Aby uruchomić stronę, wykonaj poniższe kroki:
+
+Sklonuj repozytorium:
+
+bash
+Skopiuj kod
+git clone <URL-repozytorium>
+Przejdź do głównego folderu projektu:
+
+bash
+Skopiuj kod
+cd <folder-projektu>
+Uruchom Docker Compose:
+
+bash
+Skopiuj kod
+docker-compose up --build
+Przejdź do folderu frontendu:
+
+bash
+Skopiuj kod
+cd frontend
+Zainstaluj zależności frontendu:
+
+bash
+Skopiuj kod
+npm install
+Uruchom frontend:
+
+bash
+Skopiuj kod
+npm start
+Struktura katalogów
+frontend/: Zawiera kod frontendu aplikacji.
+backend/: Zawiera kod backendu aplikacji.
+Frontend
+src/: Główne źródło kodu frontendu.
+components/: Komponenty React używane w aplikacji.
+pages/: Strony aplikacji.
+services/: Pliki do komunikacji z backendem.
+App.js: Główny plik aplikacji.
+index.js: Punkt wejściowy aplikacji.
+Backend
+controllers/: Kontrolery obsługujące logikę aplikacji.
+models/: Modele danych używane przez Sequelize.
+routes/: Definicje tras API.
+middleware/: Middleware do uwierzytelniania i innych operacji.
+config/: Pliki konfiguracyjne, w tym konfiguracja bazy danych.
+Uwierzytelnianie
+Aplikacja wykorzystuje token JWT do uwierzytelniania użytkowników. Token jest generowany podczas logowania i dołączany do każdego żądania wymagającego autoryzacji.
+
+Przykłady zapytań API
+Rejestracja użytkownika
+URL: /api/register
+Metoda: POST
+Body:
+json
+Skopiuj kod
+{
+  "username": "exampleUser",
+  "email": "user@example.com",
+  "password": "examplePassword"
+}
+Logowanie użytkownika
+URL: /api/login
+Metoda: POST
+Body:
+json
+Skopiuj kod
+{
+  "email": "user@example.com",
+  "password": "examplePassword"
+}
+Dodanie nowego ogłoszenia
+URL: /api/listings
+Metoda: POST
+Headers: Authorization: Bearer <token>
+Body:
+json
+Skopiuj kod
+{
+  "title": "Example Listing",
+  "description": "This is an example listing.",
+  "location": "Example Location",
+  "price": 100000
+}
+Wspar
